@@ -11,7 +11,7 @@ import (
 
 var db *pgxpool.Pool = config.DatabaseConnection()
 
-const up = `updateCoin()`
+const up = `CALL updateCoin()`
 
 func main() {
 	log.Println("CRON JOB")
